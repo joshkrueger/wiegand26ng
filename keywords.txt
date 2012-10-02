@@ -1,0 +1,3 @@
+initReader   KEYWORD2
+readerOne	KEYWORD2
+readerZero	KEYWORD2
