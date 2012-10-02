@@ -23,6 +23,11 @@ public:
   void readerOne(void);
   void readerZero(void);
 
+  bool canReadTag(void);
+  bool canReadTag(uint8_t);
+
+  long read(void);
+
 private:
   uint8_t readerPins[];
   long reader;

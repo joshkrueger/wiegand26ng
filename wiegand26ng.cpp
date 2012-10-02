@@ -50,6 +50,17 @@ void  Wiegand26ng::readerZero() {
   if(digitalRead(readerPins[0]) == LOW){
     readerCount++;
     reader = reader << 1;
-   
   }
+}
+
+bool Wiegand26ng::canReadTag() {
+  return canReadTag(26);
+}
+
+bool Wiegand26ng::canReadTag(uint8_t length) {
+  return (readerCount >= length);
+}
+
+long Wiegand26ng::read() {
+  return reader;
 }
